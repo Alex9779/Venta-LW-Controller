@@ -1,0 +1,9 @@
+output/
+*/bom/
+
+*.bak
+*.csv
+*.kicad_pcb-bak
+*.xml
+
+fp-info-cache
