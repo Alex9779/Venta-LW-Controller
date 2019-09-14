@@ -2025,7 +2025,7 @@
     )
   )
 
-  (gr_text "ALITECS\nVenta LW Controller\nV1.0" (at 125.75 48.85) (layer F.SilkS)
+  (gr_text "ALITECS\nVenta LW Controller\nV1.1" (at 125.75 48.85) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
   )
   (gr_arc (start 151 95.5) (end 151 98) (angle 90) (layer Edge.Cuts) (width 0.05) (tstamp 5D7B3774))
