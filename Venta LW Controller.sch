@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Venta LW45-cache
+LIBS:Venta LW Controller-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -33,6 +33,8 @@ F 0 "U1" H 2600 1767 50  0000 C CNN
 F 1 "LM2674N-3.3" H 2600 1676 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm_SMDSocket_SmallPads" H 2650 950 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2674.pdf" H 2600 1300 50  0001 C CNN
+F 4 "TME" H 2600 1300 50  0001 C CNN "Supplier"
+F 5 "LM2674M-3.3/NOP" H 2600 1300 50  0001 C CNN "Supplier Part"
 	1    2600 1300
 	1    0    0    -1  
 $EndComp
@@ -59,9 +61,11 @@ L Device:CP_Small C1
 U 1 1 5D79DA18
 P 1750 1650
 F 0 "C1" H 1838 1696 50  0000 L CNN
-F 1 "25u" H 1838 1605 50  0000 L CNN
+F 1 "22u" H 1838 1605 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A" H 1750 1650 50  0001 C CNN
 F 3 "~" H 1750 1650 50  0001 C CNN
+F 4 "TME" H 1750 1650 50  0001 C CNN "Supplier"
+F 5 "TPSA226K010R0900" H 1750 1650 50  0001 C CNN "Supplier Part"
 	1    1750 1650
 	1    0    0    -1  
 $EndComp
@@ -85,6 +89,8 @@ F 0 "C2" V 3579 1300 50  0000 C CNN
 F 1 "0.01u" V 3488 1300 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3350 1300 50  0001 C CNN
 F 3 "~" H 3350 1300 50  0001 C CNN
+F 4 "TME" H 3350 1300 50  0001 C CNN "Supplier"
+F 5 "06035A100JAT2A" H 3350 1300 50  0001 C CNN "Supplier Part"
 	1    3350 1300
 	0    -1   -1   0   
 $EndComp
@@ -98,6 +104,8 @@ F 0 "D1" V 3204 1718 50  0000 L CNN
 F 1 "SK13" V 3295 1718 50  0000 L CNN
 F 2 "Diode_SMD:D_SMA" V 3250 1650 50  0001 C CNN
 F 3 "~" V 3250 1650 50  0001 C CNN
+F 4 "TME" H 3250 1650 50  0001 C CNN "Supplier"
+F 5 "B130-13-F" H 3250 1650 50  0001 C CNN "Supplier Part"
 	1    3250 1650
 	0    1    1    0   
 $EndComp
@@ -115,6 +123,8 @@ F 0 "L1" V 4285 1500 50  0000 C CNN
 F 1 "100u" V 4194 1500 50  0000 C CNN
 F 2 "Inductor_SMD:L_12x12mm_H8mm" H 4100 1500 50  0001 C CNN
 F 3 "~" H 4100 1500 50  0001 C CNN
+F 4 "TME" H 4100 1500 50  0001 C CNN "Supplier"
+F 5 "DE1207-120" H 4100 1500 50  0001 C CNN "Supplier Part"
 	1    4100 1500
 	0    -1   -1   0   
 $EndComp
@@ -136,6 +146,8 @@ F 0 "C3" H 3938 1696 50  0000 L CNN
 F 1 "100u" H 3938 1605 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C" H 3850 1650 50  0001 C CNN
 F 3 "~" H 3850 1650 50  0001 C CNN
+F 4 "TME" H 3850 1650 50  0001 C CNN "Supplier"
+F 5 "TPSC107M010R0100" H 3850 1650 50  0001 C CNN "Supplier Part"
 	1    3850 1650
 	1    0    0    -1  
 $EndComp
@@ -169,6 +181,8 @@ F 0 "C4" H 1692 5196 50  0000 L CNN
 F 1 "10n" H 1692 5105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1600 5150 50  0001 C CNN
 F 3 "~" H 1600 5150 50  0001 C CNN
+F 4 "TME" H 1600 5150 50  0001 C CNN "Supplier"
+F 5 "CL03B103KP3NNNC" H 1600 5150 50  0001 C CNN "Supplier Part"
 	1    1600 5150
 	1    0    0    -1  
 $EndComp
@@ -177,9 +191,11 @@ L Device:C_Small C5
 U 1 1 5D7ADADC
 P 2000 5150
 F 0 "C5" H 2092 5196 50  0000 L CNN
-F 1 "100u" H 2092 5105 50  0000 L CNN
+F 1 "47u" H 2092 5105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2000 5150 50  0001 C CNN
 F 3 "~" H 2000 5150 50  0001 C CNN
+F 4 "TM" H 2000 5150 50  0001 C CNN "Supplier"
+F 5 "CL21A476MQYNNNG" H 2000 5150 50  0001 C CNN "Supplier Part"
 	1    2000 5150
 	1    0    0    -1  
 $EndComp
@@ -213,6 +229,8 @@ F 0 "R2" V 2046 3900 50  0000 C CNN
 F 1 "10k" V 1955 3900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1850 3900 50  0001 C CNN
 F 3 "~" H 1850 3900 50  0001 C CNN
+F 4 "TME" H 1850 3900 50  0001 C CNN "Supplier"
+F 5 "SMD0603-10K-1%" H 1850 3900 50  0001 C CNN "Supplier Part"
 	1    1850 3900
 	0    -1   -1   0   
 $EndComp
@@ -224,6 +242,8 @@ F 0 "R1" V 2046 3450 50  0000 C CNN
 F 1 "10k" V 1955 3450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1850 3450 50  0001 C CNN
 F 3 "~" H 1850 3450 50  0001 C CNN
+F 4 "TME" H 1850 3450 50  0001 C CNN "Supplier"
+F 5 "SMD0603-10K-1%" H 1850 3450 50  0001 C CNN "Supplier Part"
 	1    1850 3450
 	0    -1   -1   0   
 $EndComp
@@ -243,6 +263,8 @@ F 0 "R3" H 4891 4554 50  0000 R CNN
 F 1 "10k" H 4891 4645 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4950 4600 50  0001 C CNN
 F 3 "~" H 4950 4600 50  0001 C CNN
+F 4 "TME" H 4950 4600 50  0001 C CNN "Supplier"
+F 5 "SMD0603-10K-1%" H 4950 4600 50  0001 C CNN "Supplier Part"
 	1    4950 4600
 	-1   0    0    1   
 $EndComp
@@ -272,14 +294,10 @@ Wire Wire Line
 Connection ~ 4950 4900
 Wire Wire Line
 	4950 4900 4950 5100
-Text GLabel 4850 3700 2    50   Output ~ 0
+Text GLabel 5350 3700 2    50   Output ~ 0
 TXD
-Text GLabel 4850 3800 2    50   Input ~ 0
+Text GLabel 5350 3800 2    50   Input ~ 0
 RXD
-Wire Wire Line
-	4650 3700 4850 3700
-Wire Wire Line
-	4650 3800 4850 3800
 NoConn ~ 2850 4000
 NoConn ~ 4650 4200
 Text GLabel 4850 3900 2    50   Output ~ 0
@@ -298,6 +316,8 @@ F 0 "Q1" H 7390 2846 50  0000 L CNN
 F 1 "BSS138" H 7390 2755 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 7400 2900 50  0001 C CNN
 F 3 "~" H 7200 2800 50  0001 C CNN
+F 4 "TME" H 7200 2800 50  0001 C CNN "Supplier"
+F 5 "BSS138LT1G" H 7200 2800 50  0001 C CNN "Supplier Part"
 	1    7200 2800
 	1    0    0    -1  
 $EndComp
@@ -332,6 +352,8 @@ F 0 "Q2" H 9290 2846 50  0000 L CNN
 F 1 "BSS138" H 9290 2755 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 9300 2900 50  0001 C CNN
 F 3 "~" H 9100 2800 50  0001 C CNN
+F 4 "TME" H 9100 2800 50  0001 C CNN "Supplier"
+F 5 "BSS138LT1G" H 9100 2800 50  0001 C CNN "Supplier Part"
 	1    9100 2800
 	1    0    0    -1  
 $EndComp
@@ -366,13 +388,15 @@ F 0 "R8" V 7704 5400 50  0000 C CNN
 F 1 "10k" V 7795 5400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7900 5400 50  0001 C CNN
 F 3 "~" H 7900 5400 50  0001 C CNN
+F 4 "TME" H 7900 5400 50  0001 C CNN "Supplier"
+F 5 "SMD0603-10K-1%" H 7900 5400 50  0001 C CNN "Supplier Part"
 	1    7900 5400
 	0    1    1    0   
 $EndComp
 Text GLabel 7450 5400 0    50   Input ~ 0
 LED_POWER
 Text GLabel 8350 5400 2    50   Output ~ 0
-GPIO6
+GPIO3
 Wire Wire Line
 	7450 5400 7800 5400
 Wire Wire Line
@@ -385,13 +409,15 @@ F 0 "R4" V 7704 4000 50  0000 C CNN
 F 1 "10k" V 7795 4000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7900 4000 50  0001 C CNN
 F 3 "~" H 7900 4000 50  0001 C CNN
+F 4 "TME" H 7900 4000 50  0001 C CNN "Supplier"
+F 5 "SMD0603-10K-1%" H 7900 4000 50  0001 C CNN "Supplier Part"
 	1    7900 4000
 	0    1    1    0   
 $EndComp
 Text GLabel 7450 5050 0    50   Input ~ 0
 LED_LOW
 Text GLabel 8350 4000 2    50   Output ~ 0
-GPIO7
+GPIO13
 Wire Wire Line
 	7450 4000 7800 4000
 Wire Wire Line
@@ -404,13 +430,15 @@ F 0 "R7" V 7704 5050 50  0000 C CNN
 F 1 "10k" V 7795 5050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7900 5050 50  0001 C CNN
 F 3 "~" H 7900 5050 50  0001 C CNN
+F 4 "TME" H 7900 5050 50  0001 C CNN "Supplier"
+F 5 "SMD0603-10K-1%" H 7900 5050 50  0001 C CNN "Supplier Part"
 	1    7900 5050
 	0    1    1    0   
 $EndComp
 Text GLabel 7450 4700 0    50   Input ~ 0
 LED_MID
 Text GLabel 8350 5050 2    50   Output ~ 0
-GPIO8
+GPIO1
 Wire Wire Line
 	7450 5050 7800 5050
 Wire Wire Line
@@ -423,13 +451,15 @@ F 0 "R5" V 7704 4350 50  0000 C CNN
 F 1 "10k" V 7795 4350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7900 4350 50  0001 C CNN
 F 3 "~" H 7900 4350 50  0001 C CNN
+F 4 "TME" H 7900 4350 50  0001 C CNN "Supplier"
+F 5 "SMD0603-10K-1%" H 7900 4350 50  0001 C CNN "Supplier Part"
 	1    7900 4350
 	0    1    1    0   
 $EndComp
 Text GLabel 7450 4350 0    50   Input ~ 0
 LED_HIGH
 Text GLabel 8350 4350 2    50   Output ~ 0
-GPIO9
+GPIO12
 Wire Wire Line
 	7450 4350 7800 4350
 Wire Wire Line
@@ -442,42 +472,21 @@ F 0 "R6" V 7704 4700 50  0000 C CNN
 F 1 "10k" V 7795 4700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7900 4700 50  0001 C CNN
 F 3 "~" H 7900 4700 50  0001 C CNN
+F 4 "TME" H 7900 4700 50  0001 C CNN "Supplier"
+F 5 "SMD0603-10K-1%" H 7900 4700 50  0001 C CNN "Supplier Part"
 	1    7900 4700
 	0    1    1    0   
 $EndComp
 Text GLabel 7450 4000 0    50   Input ~ 0
 LED_ERROR
 Text GLabel 8350 4700 2    50   Output ~ 0
-GPIO10
+GPIO14
 Wire Wire Line
 	7450 4700 7800 4700
 Wire Wire Line
 	8000 4700 8350 4700
-Text GLabel 4000 5100 3    50   Input ~ 0
-GPIO6
-Text GLabel 3600 5100 3    50   Input ~ 0
-GPIO7
-Text GLabel 3900 5100 3    50   Input ~ 0
-GPIO8
-Text GLabel 3700 5100 3    50   Input ~ 0
-GPIO9
-Text GLabel 3800 5100 3    50   Input ~ 0
-GPIO10
-Wire Wire Line
-	3600 5100 3600 4900
-Wire Wire Line
-	3700 4900 3700 5100
-Wire Wire Line
-	3800 4900 3800 5100
-Wire Wire Line
-	3900 4900 3900 5100
-Wire Wire Line
-	4000 4900 4000 5100
-NoConn ~ 2850 4300
-NoConn ~ 2850 4200
 NoConn ~ 2850 3800
 NoConn ~ 3500 4900
-NoConn ~ 2850 4100
 Text GLabel 4850 4100 2    50   Output ~ 0
 FLASH
 Wire Wire Line
@@ -504,6 +513,8 @@ F 0 "C7" H 2542 3246 50  0000 L CNN
 F 1 "100n" H 2542 3155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2450 3200 50  0001 C CNN
 F 3 "~" H 2450 3200 50  0001 C CNN
+F 4 "TME" H 2450 3200 50  0001 C CNN "Supplier"
+F 5 "CL10B104KO8NNNC" H 2450 3200 50  0001 C CNN "Supplier Part"
 	1    2450 3200
 	1    0    0    -1  
 $EndComp
@@ -546,6 +557,8 @@ F 0 "SW1" H 1700 6635 50  0000 C CNN
 F 1 "RST" H 1700 6544 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 1700 6400 50  0001 C CNN
 F 3 "~" H 1700 6400 50  0001 C CNN
+F 4 "TME" H 1700 6400 50  0001 C CNN "Supplier"
+F 5 "TACT-67N-F" H 1700 6400 50  0001 C CNN "Supplier Part"
 	1    1700 6400
 	1    0    0    -1  
 $EndComp
@@ -557,6 +570,8 @@ F 0 "SW2" H 1700 7285 50  0000 C CNN
 F 1 "FLASH" H 1700 7194 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 1700 7050 50  0001 C CNN
 F 3 "~" H 1700 7050 50  0001 C CNN
+F 4 "TME" H 1700 7050 50  0001 C CNN "Supplier"
+F 5 "TACT-67N-F" H 1700 7050 50  0001 C CNN "Supplier Part"
 	1    1700 7050
 	1    0    0    -1  
 $EndComp
@@ -606,6 +621,8 @@ F 0 "J1" H 3830 6792 50  0000 L CNN
 F 1 "Conn_01x04" H 3830 6701 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3750 6800 50  0001 C CNN
 F 3 "~" H 3750 6800 50  0001 C CNN
+F 4 "TME" H 3750 6800 50  0001 C CNN "Supplier"
+F 5 "ZL201-04G" H 3750 6800 50  0001 C CNN "Supplier Part"
 	1    3750 6800
 	1    0    0    -1  
 $EndComp
@@ -697,7 +714,42 @@ F 0 "J2" H 8400 1767 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 8400 1676 50  0000 C CNN
 F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 8350 1350 50  0001 C CNN
 F 3 "~" H 8350 1350 50  0001 C CNN
+F 4 "TME" H 8350 1350 50  0001 C CNN "Supplier"
+F 5 "T821-1-10-S1" H 8350 1350 50  0001 C CNN "Supplier Part"
 	1    8350 1350
 	1    0    0    -1  
 $EndComp
+Text GLabel 5350 3900 2    50   Input ~ 0
+GPIO3
+Text GLabel 5350 3600 2    50   Input ~ 0
+GPIO1
+Wire Wire Line
+	4650 3800 5250 3800
+Wire Wire Line
+	5250 3800 5250 3900
+Wire Wire Line
+	5250 3900 5350 3900
+Connection ~ 5250 3800
+Wire Wire Line
+	5250 3800 5350 3800
+Wire Wire Line
+	4650 3700 5250 3700
+Wire Wire Line
+	5250 3700 5250 3600
+Wire Wire Line
+	5250 3600 5350 3600
+Connection ~ 5250 3700
+Wire Wire Line
+	5250 3700 5350 3700
+NoConn ~ 3600 4900
+NoConn ~ 3700 4900
+NoConn ~ 3800 4900
+NoConn ~ 3900 4900
+NoConn ~ 4000 4900
+Text GLabel 2850 4300 0    50   Input ~ 0
+GPIO13
+Text GLabel 2850 4200 0    50   Input ~ 0
+GPIO12
+Text GLabel 2850 4100 0    50   Input ~ 0
+GPIO14
 $EndSCHEMATC
