@@ -115,19 +115,6 @@ Wire Wire Line
 	3250 1750 3250 1850
 Wire Wire Line
 	3250 1850 2600 1850
-$Comp
-L Device:L_Small L1
-U 1 1 5D7A40F0
-P 4100 1500
-F 0 "L1" V 4285 1500 50  0000 C CNN
-F 1 "100u" V 4194 1500 50  0000 C CNN
-F 2 "Inductor_SMD:L_12x12mm_H8mm" H 4100 1500 50  0001 C CNN
-F 3 "~" H 4100 1500 50  0001 C CNN
-F 4 "TME" H 4100 1500 50  0001 C CNN "Supplier"
-F 5 "DE1207-120" H 4100 1500 50  0001 C CNN "Supplier Part"
-	1    4100 1500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	3250 1500 3550 1500
 Connection ~ 3250 1500
@@ -137,40 +124,14 @@ Wire Wire Line
 	3550 1300 3550 1500
 Connection ~ 3550 1500
 Wire Wire Line
-	3550 1500 3850 1500
-$Comp
-L Device:CP_Small C3
-U 1 1 5D7A5ACA
-P 3850 1650
-F 0 "C3" H 3938 1696 50  0000 L CNN
-F 1 "100u" H 3938 1605 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C" H 3850 1650 50  0001 C CNN
-F 3 "~" H 3850 1650 50  0001 C CNN
-F 4 "TME" H 3850 1650 50  0001 C CNN "Supplier"
-F 5 "TPSC107M010R0100" H 3850 1650 50  0001 C CNN "Supplier Part"
-	1    3850 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 1550 3850 1500
-Connection ~ 3850 1500
-Wire Wire Line
-	3850 1500 4000 1500
-Wire Wire Line
-	3850 1750 3850 1850
-Wire Wire Line
-	3850 1850 3250 1850
+	4100 1850 3250 1850
 Connection ~ 3250 1850
-Wire Wire Line
-	4200 1500 4400 1500
 Wire Wire Line
 	3100 1100 3150 1100
 Wire Wire Line
 	3150 1100 3150 950 
 Wire Wire Line
-	3150 950  3850 950 
-Wire Wire Line
-	3850 950  3850 1500
+	3150 950  4100 950 
 Text GLabel 1150 4900 0    50   Input ~ 0
 +3.3V
 $Comp
@@ -752,4 +713,43 @@ Text GLabel 2850 4200 0    50   Input ~ 0
 GPIO12
 Text GLabel 2850 4100 0    50   Input ~ 0
 GPIO14
+Wire Wire Line
+	3950 1500 4100 1500
+$Comp
+L Device:L_Small L1
+U 1 1 5D7A40F0
+P 3850 1500
+F 0 "L1" V 4035 1500 50  0000 C CNN
+F 1 "100u" V 3944 1500 50  0000 C CNN
+F 2 "Inductor_SMD:L_12x12mm_H8mm" H 3850 1500 50  0001 C CNN
+F 3 "~" H 3850 1500 50  0001 C CNN
+F 4 "TME" H 3850 1500 50  0001 C CNN "Supplier"
+F 5 "DE1207-120" H 3850 1500 50  0001 C CNN "Supplier Part"
+	1    3850 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 1750 4100 1850
+$Comp
+L Device:CP_Small C3
+U 1 1 5D7A5ACA
+P 4100 1650
+F 0 "C3" H 4188 1696 50  0000 L CNN
+F 1 "100u" H 4188 1605 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C" H 4100 1650 50  0001 C CNN
+F 3 "~" H 4100 1650 50  0001 C CNN
+F 4 "TME" H 4100 1650 50  0001 C CNN "Supplier"
+F 5 "TPSC107M010R0100" H 4100 1650 50  0001 C CNN "Supplier Part"
+	1    4100 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1500 3750 1500
+Wire Wire Line
+	4100 950  4100 1500
+Connection ~ 4100 1500
+Wire Wire Line
+	4100 1500 4400 1500
+Wire Wire Line
+	4100 1550 4100 1500
 $EndSCHEMATC
