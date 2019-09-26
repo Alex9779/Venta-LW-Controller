@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ALITECS:ESP-12F U2
-U 1 1 5D79592B
-P 3750 4000
-F 0 "U2" H 3750 4765 50  0000 C CNN
-F 1 "ESP-12F" H 3750 4674 50  0000 C CNN
-F 2 "ALITECS:ESP-12E" H 3750 4000 50  0001 C CNN
-F 3 "" H 3750 4000 50  0001 C CNN
-	1    3750 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Switching:LM2674N-3.3 U1
 U 1 1 5D798ACE
 P 2600 1300
@@ -77,7 +66,7 @@ Wire Wire Line
 Connection ~ 2600 1850
 Wire Wire Line
 	2600 1850 2600 1700
-Text GLabel 4400 1500 2    50   Output ~ 0
+Text GLabel 4300 1500 2    50   Output ~ 0
 +3.3V
 Wire Wire Line
 	3100 1500 3250 1500
@@ -118,18 +107,16 @@ Wire Wire Line
 $Comp
 L Device:L_Small L1
 U 1 1 5D7A40F0
-P 4100 1500
-F 0 "L1" V 4285 1500 50  0000 C CNN
-F 1 "100u" V 4194 1500 50  0000 C CNN
-F 2 "Inductor_SMD:L_12x12mm_H8mm" H 4100 1500 50  0001 C CNN
-F 3 "~" H 4100 1500 50  0001 C CNN
-F 4 "TME" H 4100 1500 50  0001 C CNN "Supplier"
-F 5 "DE1207-120" H 4100 1500 50  0001 C CNN "Supplier Part"
-	1    4100 1500
+P 3800 1500
+F 0 "L1" V 3985 1500 50  0000 C CNN
+F 1 "100u" V 3894 1500 50  0000 C CNN
+F 2 "Inductor_SMD:L_12x12mm_H8mm" H 3800 1500 50  0001 C CNN
+F 3 "~" H 3800 1500 50  0001 C CNN
+F 4 "TME" H 3800 1500 50  0001 C CNN "Supplier"
+F 5 "DE1207-120" H 3800 1500 50  0001 C CNN "Supplier Part"
+	1    3800 1500
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3250 1500 3550 1500
 Connection ~ 3250 1500
 Wire Wire Line
 	3450 1300 3550 1300
@@ -139,164 +126,99 @@ Connection ~ 3550 1500
 $Comp
 L Device:CP_Small C3
 U 1 1 5D7A5ACA
-P 4300 1700
-F 0 "C3" H 4388 1746 50  0000 L CNN
-F 1 "100u" H 4388 1655 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C" H 4300 1700 50  0001 C CNN
-F 3 "~" H 4300 1700 50  0001 C CNN
-F 4 "TME" H 4300 1700 50  0001 C CNN "Supplier"
-F 5 "TPSC107M010R0100" H 4300 1700 50  0001 C CNN "Supplier Part"
-	1    4300 1700
+P 4000 1650
+F 0 "C3" H 4088 1696 50  0000 L CNN
+F 1 "100u" H 4088 1605 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C" H 4000 1650 50  0001 C CNN
+F 3 "~" H 4000 1650 50  0001 C CNN
+F 4 "TME" H 4000 1650 50  0001 C CNN "Supplier"
+F 5 "TPSC107M010R0100" H 4000 1650 50  0001 C CNN "Supplier Part"
+	1    4000 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 1800 4300 1850
+	4000 1750 4000 1850
 Wire Wire Line
-	4300 1850 3250 1850
+	4000 1850 3250 1850
 Connection ~ 3250 1850
 Wire Wire Line
-	4200 1500 4300 1500
+	3900 1500 4000 1500
 Wire Wire Line
 	3100 1100 3150 1100
 Wire Wire Line
 	3150 1100 3150 950 
-Text GLabel 1150 4900 0    50   Input ~ 0
+Wire Wire Line
+	3150 950  4000 950 
+Wire Wire Line
+	4000 950  4000 1500
+Text GLabel 2150 2300 0    50   Input ~ 0
 +3.3V
 $Comp
 L Device:C_Small C4
 U 1 1 5D7AD579
-P 1600 5150
-F 0 "C4" H 1692 5196 50  0000 L CNN
-F 1 "10n" H 1692 5105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1600 5150 50  0001 C CNN
-F 3 "~" H 1600 5150 50  0001 C CNN
-F 4 "TME" H 1600 5150 50  0001 C CNN "Supplier"
-F 5 "CL03B103KP3NNNC" H 1600 5150 50  0001 C CNN "Supplier Part"
-	1    1600 5150
+P 2600 2550
+F 0 "C4" H 2692 2596 50  0000 L CNN
+F 1 "10n" H 2692 2505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2600 2550 50  0001 C CNN
+F 3 "~" H 2600 2550 50  0001 C CNN
+F 4 "TME" H 2600 2550 50  0001 C CNN "Supplier"
+F 5 "CL03B103KP3NNNC" H 2600 2550 50  0001 C CNN "Supplier Part"
+	1    2600 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C5
 U 1 1 5D7ADADC
-P 2000 5150
-F 0 "C5" H 2092 5196 50  0000 L CNN
-F 1 "47u" H 2092 5105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2000 5150 50  0001 C CNN
-F 3 "~" H 2000 5150 50  0001 C CNN
-F 4 "TM" H 2000 5150 50  0001 C CNN "Supplier"
-F 5 "CL21A476MQYNNNG" H 2000 5150 50  0001 C CNN "Supplier Part"
-	1    2000 5150
+P 3000 2550
+F 0 "C5" H 3092 2596 50  0000 L CNN
+F 1 "47u" H 3092 2505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3000 2550 50  0001 C CNN
+F 3 "~" H 3000 2550 50  0001 C CNN
+F 4 "TM" H 3000 2550 50  0001 C CNN "Supplier"
+F 5 "CL21A476MQYNNNG" H 3000 2550 50  0001 C CNN "Supplier Part"
+	1    3000 2550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5D7AE251
-P 2000 5550
-F 0 "#PWR01" H 2000 5300 50  0001 C CNN
-F 1 "GND" H 2005 5377 50  0000 C CNN
-F 2 "" H 2000 5550 50  0001 C CNN
-F 3 "" H 2000 5550 50  0001 C CNN
-	1    2000 5550
+P 3000 3100
+F 0 "#PWR01" H 3000 2850 50  0001 C CNN
+F 1 "GND" H 3005 2927 50  0000 C CNN
+F 2 "" H 3000 3100 50  0001 C CNN
+F 3 "" H 3000 3100 50  0001 C CNN
+	1    3000 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1600 5050 1600 4900
+	2600 2450 2600 2300
 Wire Wire Line
-	2000 5050 2000 4900
-Wire Wire Line
-	1600 5250 1600 5400
-Wire Wire Line
-	2000 5250 2000 5400
-Wire Wire Line
-	2000 5400 2000 5550
-Connection ~ 2000 5400
+	3000 2450 3000 2300
 $Comp
 L Device:R_Small R2
 U 1 1 5D7B504C
-P 1850 3900
-F 0 "R2" V 2046 3900 50  0000 C CNN
-F 1 "10k" V 1955 3900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1850 3900 50  0001 C CNN
-F 3 "~" H 1850 3900 50  0001 C CNN
-F 4 "TME" H 1850 3900 50  0001 C CNN "Supplier"
-F 5 "SMD0603-10K-1%" H 1850 3900 50  0001 C CNN "Supplier Part"
-	1    1850 3900
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 5D7B599D
-P 1850 3450
-F 0 "R1" V 2046 3450 50  0000 C CNN
-F 1 "10k" V 1955 3450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1850 3450 50  0001 C CNN
-F 3 "~" H 1850 3450 50  0001 C CNN
-F 4 "TME" H 1850 3450 50  0001 C CNN "Supplier"
-F 5 "SMD0603-10K-1%" H 1850 3450 50  0001 C CNN "Supplier Part"
-	1    1850 3450
+P 1850 4400
+F 0 "R2" V 2046 4400 50  0000 C CNN
+F 1 "10k" V 1955 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1850 4400 50  0001 C CNN
+F 3 "~" H 1850 4400 50  0001 C CNN
+F 4 "TME" H 1850 4400 50  0001 C CNN "Supplier"
+F 5 "SMD0603-10K-1%" H 1850 4400 50  0001 C CNN "Supplier Part"
+	1    1850 4400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1150 4900 1600 4900
+	2150 2300 2600 2300
 Wire Wire Line
-	1950 3900 2850 3900
-Wire Wire Line
-	2650 4900 2650 4400
-Wire Wire Line
-	2650 4400 2850 4400
-$Comp
-L Device:R_Small R3
-U 1 1 5D7C6A31
-P 4950 4600
-F 0 "R3" H 4891 4554 50  0000 R CNN
-F 1 "10k" H 4891 4645 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4950 4600 50  0001 C CNN
-F 3 "~" H 4950 4600 50  0001 C CNN
-F 4 "TME" H 4950 4600 50  0001 C CNN "Supplier"
-F 5 "SMD0603-10K-1%" H 4950 4600 50  0001 C CNN "Supplier Part"
-	1    4950 4600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR07
-U 1 1 5D7C78B5
-P 4950 5100
-F 0 "#PWR07" H 4950 4850 50  0001 C CNN
-F 1 "GND" H 4955 4927 50  0000 C CNN
-F 2 "" H 4950 5100 50  0001 C CNN
-F 3 "" H 4950 5100 50  0001 C CNN
-	1    4950 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 4300 4950 4300
-Wire Wire Line
-	4950 4300 4950 4500
-Wire Wire Line
-	4650 4400 4800 4400
-Wire Wire Line
-	4800 4400 4800 4900
-Wire Wire Line
-	4800 4900 4950 4900
-Wire Wire Line
-	4950 4700 4950 4900
-Connection ~ 4950 4900
-Wire Wire Line
-	4950 4900 4950 5100
-Text GLabel 5350 3700 2    50   Output ~ 0
+	1950 4400 2250 4400
+Text GLabel 4450 3300 2    50   Output ~ 0
 TXD
-Text GLabel 5350 3800 2    50   Input ~ 0
+Text GLabel 4450 3500 2    50   Input ~ 0
 RXD
-NoConn ~ 2850 4000
-NoConn ~ 4650 4200
-Text GLabel 4850 3900 2    50   Output ~ 0
-GPIO5
-Text GLabel 4850 4000 2    50   Output ~ 0
-GPIO4
-Wire Wire Line
-	4650 3900 4850 3900
-Wire Wire Line
-	4650 4000 4850 4000
+Text GLabel 4450 4300 2    50   Output ~ 0
+GPIO17
+Text GLabel 4450 4200 2    50   Output ~ 0
+GPIO16
 $Comp
 L Device:Q_NPN_BCE Q1
 U 1 1 5D7D9057
@@ -329,8 +251,8 @@ F 3 "" H 7300 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7300 3000 7300 3200
-Text GLabel 6800 2800 0    50   Input ~ 0
-GPIO4
+Text GLabel 8700 2800 0    50   Input ~ 0
+GPIO16
 Wire Wire Line
 	6800 2800 7000 2800
 $Comp
@@ -365,8 +287,8 @@ F 3 "" H 9200 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9200 3000 9200 3200
-Text GLabel 8700 2800 0    50   Input ~ 0
-GPIO5
+Text GLabel 6800 2800 0    50   Input ~ 0
+GPIO17
 Wire Wire Line
 	8700 2800 8900 2800
 $Comp
@@ -384,8 +306,8 @@ F 5 "SMD0603-10K-1%" H 7900 5400 50  0001 C CNN "Supplier Part"
 $EndComp
 Text GLabel 7450 5400 0    50   Input ~ 0
 LED_POWER
-Text GLabel 8350 5400 2    50   Output ~ 0
-GPIO3
+Text GLabel 8350 4000 2    50   Output ~ 0
+GPIO23
 Wire Wire Line
 	7450 5400 7800 5400
 Wire Wire Line
@@ -405,8 +327,8 @@ F 5 "SMD0603-10K-1%" H 7900 4000 50  0001 C CNN "Supplier Part"
 $EndComp
 Text GLabel 7450 5050 0    50   Input ~ 0
 LED_LOW
-Text GLabel 8350 4000 2    50   Output ~ 0
-GPIO13
+Text GLabel 8350 5050 2    50   Output ~ 0
+GPIO19
 Wire Wire Line
 	7450 4000 7800 4000
 Wire Wire Line
@@ -426,8 +348,8 @@ F 5 "SMD0603-10K-1%" H 7900 5050 50  0001 C CNN "Supplier Part"
 $EndComp
 Text GLabel 7450 4700 0    50   Input ~ 0
 LED_MID
-Text GLabel 8350 5050 2    50   Output ~ 0
-GPIO1
+Text GLabel 8350 4350 2    50   Output ~ 0
+GPIO22
 Wire Wire Line
 	7450 5050 7800 5050
 Wire Wire Line
@@ -447,8 +369,8 @@ F 5 "SMD0603-10K-1%" H 7900 4350 50  0001 C CNN "Supplier Part"
 $EndComp
 Text GLabel 7450 4350 0    50   Input ~ 0
 LED_HIGH
-Text GLabel 8350 4350 2    50   Output ~ 0
-GPIO12
+Text GLabel 8350 5400 2    50   Output ~ 0
+GPIO18
 Wire Wire Line
 	7450 4350 7800 4350
 Wire Wire Line
@@ -469,75 +391,26 @@ $EndComp
 Text GLabel 7450 4000 0    50   Input ~ 0
 LED_ERROR
 Text GLabel 8350 4700 2    50   Output ~ 0
-GPIO14
+GPIO21
 Wire Wire Line
 	7450 4700 7800 4700
 Wire Wire Line
 	8000 4700 8350 4700
-NoConn ~ 2850 3800
-NoConn ~ 3500 4900
-Text GLabel 4850 4100 2    50   Output ~ 0
+Text GLabel 4450 3200 2    50   Output ~ 0
 FLASH
+Connection ~ 2600 2300
 Wire Wire Line
-	4650 4100 4850 4100
-Connection ~ 1600 4900
+	2600 2300 3000 2300
 Wire Wire Line
-	1600 4900 2000 4900
-Connection ~ 2000 4900
-Wire Wire Line
-	1600 5400 2000 5400
-Text GLabel 2150 2900 1    50   Output ~ 0
+	2600 2950 3000 2950
+Text GLabel 2250 3850 1    50   Output ~ 0
 RST
-Text GLabel 1550 3450 0    50   Input ~ 0
-+3.3V
-Text GLabel 1550 3900 0    50   Input ~ 0
+Text GLabel 1550 4400 0    50   Input ~ 0
 +3.3V
 Wire Wire Line
-	1550 3900 1750 3900
-$Comp
-L Device:C_Small C7
-U 1 1 5D81277A
-P 2450 3200
-F 0 "C7" H 2542 3246 50  0000 L CNN
-F 1 "100n" H 2542 3155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2450 3200 50  0001 C CNN
-F 3 "~" H 2450 3200 50  0001 C CNN
-F 4 "TME" H 2450 3200 50  0001 C CNN "Supplier"
-F 5 "CL10B104KO8NNNC" H 2450 3200 50  0001 C CNN "Supplier Part"
-	1    2450 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 5D8151F4
-P 2450 2900
-F 0 "#PWR04" H 2450 2650 50  0001 C CNN
-F 1 "GND" H 2455 2727 50  0000 C CNN
-F 2 "" H 2450 2900 50  0001 C CNN
-F 3 "" H 2450 2900 50  0001 C CNN
-	1    2450 2900
-	-1   0    0    1   
-$EndComp
+	1550 4400 1750 4400
 Wire Wire Line
-	1550 3450 1750 3450
-Wire Wire Line
-	1950 3450 2150 3450
-Wire Wire Line
-	2150 3450 2150 2900
-Wire Wire Line
-	2150 3450 2450 3450
-Wire Wire Line
-	2450 3450 2450 3300
-Connection ~ 2150 3450
-Wire Wire Line
-	2450 3100 2450 2900
-Wire Wire Line
-	2450 3450 2650 3450
-Wire Wire Line
-	2650 3700 2850 3700
-Connection ~ 2450 3450
-Wire Wire Line
-	2650 3450 2650 3700
+	2250 4400 2250 3850
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5D823A8E
@@ -693,8 +566,6 @@ Wire Wire Line
 	1750 1850 2600 1850
 Wire Wire Line
 	1750 1100 2100 1100
-Wire Wire Line
-	2000 4900 2650 4900
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J2
 U 1 1 5D7A19E5
@@ -708,48 +579,86 @@ F 5 "T821-1-10-S1" H 8350 1350 50  0001 C CNN "Supplier Part"
 	1    8350 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 5350 3900 2    50   Input ~ 0
-GPIO3
-Text GLabel 5350 3600 2    50   Input ~ 0
-GPIO1
+Text GLabel 4450 4400 2    50   Input ~ 0
+GPIO18
+Text GLabel 4450 4500 2    50   Input ~ 0
+GPIO19
 Wire Wire Line
-	4650 3800 5250 3800
+	4350 4400 4450 4400
 Wire Wire Line
-	5250 3800 5250 3900
+	4350 3500 4450 3500
 Wire Wire Line
-	5250 3900 5350 3900
-Connection ~ 5250 3800
+	4350 4500 4450 4500
 Wire Wire Line
-	5250 3800 5350 3800
+	4350 3300 4450 3300
+Text GLabel 4450 4800 2    50   Input ~ 0
+GPIO23
+Text GLabel 4450 4700 2    50   Input ~ 0
+GPIO22
+Text GLabel 4450 4600 2    50   Input ~ 0
+GPIO21
+$Comp
+L RF_Module:ESP32-WROOM-32 U2
+U 1 1 5D809B5C
+P 3750 4400
+F 0 "U2" H 3750 5981 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 3750 5890 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 3750 2900 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 3450 4450 50  0001 C CNN
+	1    3750 4400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4650 3700 5250 3700
+	3000 2650 3000 2950
 Wire Wire Line
-	5250 3700 5250 3600
+	2600 2650 2600 2950
 Wire Wire Line
-	5250 3600 5350 3600
-Connection ~ 5250 3700
+	3000 2950 3000 3100
+Connection ~ 3000 2950
+Connection ~ 3000 2300
 Wire Wire Line
-	5250 3700 5350 3700
-NoConn ~ 3600 4900
-NoConn ~ 3700 4900
-NoConn ~ 3800 4900
-NoConn ~ 3900 4900
-NoConn ~ 4000 4900
-Text GLabel 2850 4300 0    50   Input ~ 0
-GPIO13
-Text GLabel 2850 4200 0    50   Input ~ 0
-GPIO12
-Text GLabel 2850 4100 0    50   Input ~ 0
-GPIO14
+	3000 2300 3750 2300
 Wire Wire Line
-	3550 1500 4000 1500
+	3750 2300 3750 3000
 Wire Wire Line
-	4300 1600 4300 1500
-Connection ~ 4300 1500
+	2850 3200 3150 3200
 Wire Wire Line
-	4300 1500 4400 1500
+	2850 3200 2850 4400
+$Comp
+L power:GND #PWR0101
+U 1 1 5D8471E5
+P 3750 5950
+F 0 "#PWR0101" H 3750 5700 50  0001 C CNN
+F 1 "GND" H 3755 5777 50  0000 C CNN
+F 2 "" H 3750 5950 50  0001 C CNN
+F 3 "" H 3750 5950 50  0001 C CNN
+	1    3750 5950
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4300 950  4300 1500
+	3750 5800 3750 5950
+Connection ~ 2250 4400
 Wire Wire Line
-	3150 950  4300 950 
+	2250 4400 2850 4400
+Wire Wire Line
+	4350 4200 4450 4200
+Wire Wire Line
+	4350 4300 4450 4300
+Wire Wire Line
+	4350 4600 4450 4600
+Wire Wire Line
+	4350 4700 4450 4700
+Wire Wire Line
+	4450 4800 4350 4800
+Wire Wire Line
+	4350 3200 4450 3200
+Connection ~ 4000 1500
+Wire Wire Line
+	4000 1500 4300 1500
+Wire Wire Line
+	3250 1500 3550 1500
+Wire Wire Line
+	4000 1550 4000 1500
+Wire Wire Line
+	3550 1500 3700 1500
 $EndSCHEMATC
