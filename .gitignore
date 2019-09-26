@@ -4,6 +4,7 @@ output/
 *.bak
 *.csv
 *.kicad_pcb-bak
+*.sch-bak
 *.xml
 
 fp-info-cache
