@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date ""
-Rev ""
+Date "2019-10-04"
+Rev "V2.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -220,109 +220,26 @@ Text GLabel 6100 2200 0    50   Input ~ 0
 GPIO17
 Wire Wire Line
 	6450 3550 6550 3550
-$Comp
-L Device:R_Small R10
-U 1 1 5D7E3064
-P 9250 4800
-F 0 "R10" V 9054 4800 50  0000 C CNN
-F 1 "560K" V 9145 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9250 4800 50  0001 C CNN
-F 3 "~" H 9250 4800 50  0001 C CNN
-F 4 "TME" H 9250 4800 50  0001 C CNN "Supplier"
-F 5 "SMD0603-560K-1%" H 9250 4800 50  0001 C CNN "Supplier Part"
-	1    9250 4800
-	0    1    1    0   
-$EndComp
 Text GLabel 8850 4800 0    50   Input ~ 0
 LED_POWER
 Text GLabel 9700 2150 2    50   Output ~ 0
 GPIO23
-Wire Wire Line
-	8850 4800 9150 4800
-Wire Wire Line
-	9350 4800 9500 4800
-$Comp
-L Device:R_Small R6
-U 1 1 5D7E7B94
-P 9250 2150
-F 0 "R6" V 9054 2150 50  0000 C CNN
-F 1 "560K" V 9145 2150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9250 2150 50  0001 C CNN
-F 3 "~" H 9250 2150 50  0001 C CNN
-F 4 "TME" H 9250 2150 50  0001 C CNN "Supplier"
-F 5 "SMD0603-560K-1%" H 9250 2150 50  0001 C CNN "Supplier Part"
-	1    9250 2150
-	0    1    1    0   
-$EndComp
 Text GLabel 8800 4150 0    50   Input ~ 0
 LED_LOW
 Text GLabel 9700 4150 2    50   Output ~ 0
 GPIO19
-Wire Wire Line
-	8800 2150 9150 2150
-$Comp
-L Device:R_Small R9
-U 1 1 5D7E8F9F
-P 9250 4150
-F 0 "R9" V 9054 4150 50  0000 C CNN
-F 1 "560K" V 9145 4150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9250 4150 50  0001 C CNN
-F 3 "~" H 9250 4150 50  0001 C CNN
-F 4 "TME" H 9250 4150 50  0001 C CNN "Supplier"
-F 5 "SMD0603-560K-1%" H 9250 4150 50  0001 C CNN "Supplier Part"
-	1    9250 4150
-	0    1    1    0   
-$EndComp
 Text GLabel 8800 3500 0    50   Input ~ 0
 LED_MID
 Text GLabel 9700 2800 2    50   Output ~ 0
 GPIO22
-Wire Wire Line
-	8800 4150 9150 4150
-Wire Wire Line
-	9350 4150 9500 4150
-$Comp
-L Device:R_Small R7
-U 1 1 5D7EA54A
-P 9250 2800
-F 0 "R7" V 9054 2800 50  0000 C CNN
-F 1 "560K" V 9145 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9250 2800 50  0001 C CNN
-F 3 "~" H 9250 2800 50  0001 C CNN
-F 4 "TME" H 9250 2800 50  0001 C CNN "Supplier"
-F 5 "SMD0603-560K-1%" H 9250 2800 50  0001 C CNN "Supplier Part"
-	1    9250 2800
-	0    1    1    0   
-$EndComp
 Text GLabel 8800 2800 0    50   Input ~ 0
 LED_HIGH
 Text GLabel 9750 4800 2    50   Output ~ 0
 GPIO18
-Wire Wire Line
-	8800 2800 9150 2800
-Wire Wire Line
-	9350 2800 9500 2800
-$Comp
-L Device:R_Small R8
-U 1 1 5D7EBEA3
-P 9250 3500
-F 0 "R8" V 9054 3500 50  0000 C CNN
-F 1 "560K" V 9145 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9250 3500 50  0001 C CNN
-F 3 "~" H 9250 3500 50  0001 C CNN
-F 4 "TME" H 9250 3500 50  0001 C CNN "Supplier"
-F 5 "SMD0603-560K-1%" H 9250 3500 50  0001 C CNN "Supplier Part"
-	1    9250 3500
-	0    1    1    0   
-$EndComp
 Text GLabel 8800 2150 0    50   Input ~ 0
 LED_ERROR
 Text GLabel 9700 3500 2    50   Output ~ 0
 GPIO21
-Wire Wire Line
-	8800 3500 9150 3500
-Wire Wire Line
-	9350 3500 9500 3500
 Text GLabel 4450 3200 2    50   Output ~ 0
 FLASH
 Text GLabel 2250 3250 1    50   Output ~ 0
@@ -475,8 +392,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 6750 5850 6750
 Wire Wire Line
-	5850 6850 6100 6850
-Wire Wire Line
 	6100 6950 5850 6950
 Wire Wire Line
 	5850 7050 6100 7050
@@ -486,8 +401,6 @@ Wire Wire Line
 	5100 7050 5350 7050
 Wire Wire Line
 	1450 1700 2300 1700
-Wire Wire Line
-	1450 950  1800 950 
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J2
 U 1 1 5D7A19E5
@@ -641,173 +554,6 @@ Connection ~ 6550 3550
 Wire Wire Line
 	6550 3550 6650 3550
 $Comp
-L Device:R_Small R12
-U 1 1 5D922341
-P 9500 3000
-F 0 "R12" V 9304 3000 50  0000 C CNN
-F 1 "100K" V 9395 3000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 3000 50  0001 C CNN
-F 3 "~" H 9500 3000 50  0001 C CNN
-F 4 "TME" H 9500 3000 50  0001 C CNN "Supplier"
-F 5 "SMD0603-100K-1%" H 9500 3000 50  0001 C CNN "Supplier Part"
-	1    9500 3000
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR012
-U 1 1 5D922E10
-P 9700 3150
-F 0 "#PWR012" H 9700 2900 50  0001 C CNN
-F 1 "GND" H 9705 2977 50  0000 C CNN
-F 2 "" H 9700 3150 50  0001 C CNN
-F 3 "" H 9700 3150 50  0001 C CNN
-	1    9700 3150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9500 3100 9500 3150
-Wire Wire Line
-	9500 3150 9700 3150
-Wire Wire Line
-	9500 2900 9500 2800
-Connection ~ 9500 2800
-Wire Wire Line
-	9500 2800 9700 2800
-Wire Wire Line
-	9350 2150 9500 2150
-$Comp
-L Device:R_Small R11
-U 1 1 5D93257F
-P 9500 2350
-F 0 "R11" V 9304 2350 50  0000 C CNN
-F 1 "100K" V 9395 2350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 2350 50  0001 C CNN
-F 3 "~" H 9500 2350 50  0001 C CNN
-F 4 "TME" H 9500 2350 50  0001 C CNN "Supplier"
-F 5 "SMD0603-100K-1%" H 9500 2350 50  0001 C CNN "Supplier Part"
-	1    9500 2350
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR011
-U 1 1 5D932585
-P 9700 2500
-F 0 "#PWR011" H 9700 2250 50  0001 C CNN
-F 1 "GND" H 9705 2327 50  0000 C CNN
-F 2 "" H 9700 2500 50  0001 C CNN
-F 3 "" H 9700 2500 50  0001 C CNN
-	1    9700 2500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9500 2450 9500 2500
-Wire Wire Line
-	9500 2500 9700 2500
-$Comp
-L Device:R_Small R13
-U 1 1 5D939BB2
-P 9500 3700
-F 0 "R13" V 9304 3700 50  0000 C CNN
-F 1 "100K" V 9395 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 3700 50  0001 C CNN
-F 3 "~" H 9500 3700 50  0001 C CNN
-F 4 "TME" H 9500 3700 50  0001 C CNN "Supplier"
-F 5 "SMD0603-100K-1%" H 9500 3700 50  0001 C CNN "Supplier Part"
-	1    9500 3700
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 5D939BB8
-P 9700 3850
-F 0 "#PWR013" H 9700 3600 50  0001 C CNN
-F 1 "GND" H 9705 3677 50  0000 C CNN
-F 2 "" H 9700 3850 50  0001 C CNN
-F 3 "" H 9700 3850 50  0001 C CNN
-	1    9700 3850
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9500 3800 9500 3850
-Wire Wire Line
-	9500 3850 9700 3850
-Wire Wire Line
-	9500 3600 9500 3500
-Connection ~ 9500 3500
-Wire Wire Line
-	9500 3500 9700 3500
-Wire Wire Line
-	9500 2250 9500 2150
-Connection ~ 9500 2150
-Wire Wire Line
-	9500 2150 9700 2150
-$Comp
-L Device:R_Small R14
-U 1 1 5D94DC00
-P 9500 4350
-F 0 "R14" V 9304 4350 50  0000 C CNN
-F 1 "100K" V 9395 4350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 4350 50  0001 C CNN
-F 3 "~" H 9500 4350 50  0001 C CNN
-F 4 "TME" H 9500 4350 50  0001 C CNN "Supplier"
-F 5 "SMD0603-100K-1%" H 9500 4350 50  0001 C CNN "Supplier Part"
-	1    9500 4350
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR014
-U 1 1 5D94DC06
-P 9700 4500
-F 0 "#PWR014" H 9700 4250 50  0001 C CNN
-F 1 "GND" H 9705 4327 50  0000 C CNN
-F 2 "" H 9700 4500 50  0001 C CNN
-F 3 "" H 9700 4500 50  0001 C CNN
-	1    9700 4500
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9500 4450 9500 4500
-Wire Wire Line
-	9500 4500 9700 4500
-$Comp
-L Device:R_Small R15
-U 1 1 5D955BBB
-P 9500 5000
-F 0 "R15" V 9304 5000 50  0000 C CNN
-F 1 "100K" V 9395 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 5000 50  0001 C CNN
-F 3 "~" H 9500 5000 50  0001 C CNN
-F 4 "TME" H 9500 5000 50  0001 C CNN "Supplier"
-F 5 "SMD0603-100K-1%" H 9500 5000 50  0001 C CNN "Supplier Part"
-	1    9500 5000
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR015
-U 1 1 5D955BC1
-P 9700 5150
-F 0 "#PWR015" H 9700 4900 50  0001 C CNN
-F 1 "GND" H 9705 4977 50  0000 C CNN
-F 2 "" H 9700 5150 50  0001 C CNN
-F 3 "" H 9700 5150 50  0001 C CNN
-	1    9700 5150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9500 5100 9500 5150
-Wire Wire Line
-	9500 5150 9700 5150
-Wire Wire Line
-	9500 4900 9500 4800
-Connection ~ 9500 4800
-Wire Wire Line
-	9500 4800 9750 4800
-Wire Wire Line
-	9500 4250 9500 4150
-Connection ~ 9500 4150
-Wire Wire Line
-	9500 4150 9700 4150
-$Comp
 L Transistor_FET:BSS138 Q1
 U 1 1 5D8D692A
 P 6850 2200
@@ -937,4 +683,105 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 	1    3750 4400
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3150 3400
+NoConn ~ 3150 3500
+NoConn ~ 3150 4400
+NoConn ~ 3150 4500
+NoConn ~ 3150 4600
+NoConn ~ 3150 4700
+NoConn ~ 3150 4800
+NoConn ~ 3150 4900
+NoConn ~ 4350 4100
+NoConn ~ 4350 4000
+NoConn ~ 4350 3900
+NoConn ~ 4350 3800
+NoConn ~ 4350 3700
+NoConn ~ 4350 3600
+NoConn ~ 4350 4900
+NoConn ~ 4350 5000
+NoConn ~ 4350 5100
+NoConn ~ 4350 5200
+NoConn ~ 4350 5300
+NoConn ~ 4350 5400
+NoConn ~ 4350 5500
+NoConn ~ 4350 3400
+Wire Wire Line
+	5850 6850 6100 6850
+Wire Wire Line
+	1450 950  1800 950 
+$Comp
+L Diode:1N4148WS D?
+U 1 1 5D9CF7F3
+P 9300 2150
+F 0 "D?" H 9300 2367 50  0000 C CNN
+F 1 "1N4148WS" H 9300 2276 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 9300 1975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 2150 50  0001 C CNN
+	1    9300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D?
+U 1 1 5D9CFB7F
+P 9300 2800
+F 0 "D?" H 9300 3017 50  0000 C CNN
+F 1 "1N4148WS" H 9300 2926 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 9300 2625 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 2800 50  0001 C CNN
+	1    9300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D?
+U 1 1 5D9CFFBC
+P 9300 3500
+F 0 "D?" H 9300 3717 50  0000 C CNN
+F 1 "1N4148WS" H 9300 3626 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 9300 3325 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 3500 50  0001 C CNN
+	1    9300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D?
+U 1 1 5D9D0425
+P 9300 4150
+F 0 "D?" H 9300 4367 50  0000 C CNN
+F 1 "1N4148WS" H 9300 4276 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 9300 3975 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 4150 50  0001 C CNN
+	1    9300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148WS D?
+U 1 1 5D9D0838
+P 9300 4800
+F 0 "D?" H 9300 5017 50  0000 C CNN
+F 1 "1N4148WS" H 9300 4926 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323" H 9300 4625 50  0001 C CNN
+F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 4800 50  0001 C CNN
+	1    9300 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2150 9150 2150
+Wire Wire Line
+	9450 2150 9700 2150
+Wire Wire Line
+	8800 2800 9150 2800
+Wire Wire Line
+	9450 2800 9700 2800
+Wire Wire Line
+	8800 3500 9150 3500
+Wire Wire Line
+	9450 3500 9700 3500
+Wire Wire Line
+	8800 4150 9150 4150
+Wire Wire Line
+	9450 4150 9700 4150
+Wire Wire Line
+	8850 4800 9150 4800
+Wire Wire Line
+	9450 4800 9750 4800
 $EndSCHEMATC
