@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title ""
 Date "2019-10-04"
-Rev "V2.1"
+Rev "V2.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -710,10 +710,10 @@ Wire Wire Line
 Wire Wire Line
 	1450 950  1800 950 
 $Comp
-L Diode:1N4148WS D?
+L Diode:1N4148WS D2
 U 1 1 5D9CF7F3
 P 9300 2150
-F 0 "D?" H 9300 2367 50  0000 C CNN
+F 0 "D2" H 9300 2367 50  0000 C CNN
 F 1 "1N4148WS" H 9300 2276 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-323" H 9300 1975 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 2150 50  0001 C CNN
@@ -721,10 +721,10 @@ F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D?
+L Diode:1N4148WS D3
 U 1 1 5D9CFB7F
 P 9300 2800
-F 0 "D?" H 9300 3017 50  0000 C CNN
+F 0 "D3" H 9300 3017 50  0000 C CNN
 F 1 "1N4148WS" H 9300 2926 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-323" H 9300 2625 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 2800 50  0001 C CNN
@@ -732,10 +732,10 @@ F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D?
+L Diode:1N4148WS D4
 U 1 1 5D9CFFBC
 P 9300 3500
-F 0 "D?" H 9300 3717 50  0000 C CNN
+F 0 "D4" H 9300 3717 50  0000 C CNN
 F 1 "1N4148WS" H 9300 3626 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-323" H 9300 3325 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 3500 50  0001 C CNN
@@ -743,10 +743,10 @@ F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D?
+L Diode:1N4148WS D5
 U 1 1 5D9D0425
 P 9300 4150
-F 0 "D?" H 9300 4367 50  0000 C CNN
+F 0 "D5" H 9300 4367 50  0000 C CNN
 F 1 "1N4148WS" H 9300 4276 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-323" H 9300 3975 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 4150 50  0001 C CNN
@@ -754,10 +754,10 @@ F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Diode:1N4148WS D?
+L Diode:1N4148WS D6
 U 1 1 5D9D0838
 P 9300 4800
-F 0 "D?" H 9300 5017 50  0000 C CNN
+F 0 "D6" H 9300 5017 50  0000 C CNN
 F 1 "1N4148WS" H 9300 4926 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-323" H 9300 4625 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/85751/1n4148ws.pdf" H 9300 4800 50  0001 C CNN
