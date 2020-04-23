@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Venta LW Controller-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -379,41 +378,10 @@ Text GLabel 5100 6750 0    50   Input ~ 0
 LED_HIGH
 Text GLabel 5100 6650 0    50   Input ~ 0
 LED_ERROR
-Wire Wire Line
-	5100 6650 5350 6650
-Wire Wire Line
-	5100 6750 5350 6750
-Wire Wire Line
-	5350 6850 5100 6850
-Wire Wire Line
-	5100 6950 5350 6950
-Wire Wire Line
-	5850 6650 6100 6650
-Wire Wire Line
-	6100 6750 5850 6750
-Wire Wire Line
-	6100 6950 5850 6950
-Wire Wire Line
-	5850 7050 6100 7050
 Text GLabel 6100 6850 2    50   Input ~ 0
 BTN_COVER
 Wire Wire Line
-	5100 7050 5350 7050
-Wire Wire Line
 	1450 1700 2300 1700
-$Comp
-L Connector_Generic:Conn_02x05_Odd_Even J2
-U 1 1 5D7A19E5
-P 5550 6850
-F 0 "J2" H 5600 7267 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 5600 7176 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 5550 6850 50  0001 C CNN
-F 3 "~" H 5550 6850 50  0001 C CNN
-F 4 "TME" H 5550 6850 50  0001 C CNN "Supplier"
-F 5 "T821-1-10-S1" H 5550 6850 50  0001 C CNN "Supplier Part"
-	1    5550 6850
-	1    0    0    -1  
-$EndComp
 Text GLabel 4450 4400 2    50   Input ~ 0
 GPIO18
 Text GLabel 4450 4500 2    50   Input ~ 0
@@ -706,8 +674,6 @@ NoConn ~ 4350 5400
 NoConn ~ 4350 5500
 NoConn ~ 4350 3400
 Wire Wire Line
-	5850 6850 6100 6850
-Wire Wire Line
 	1450 950  1800 950 
 $Comp
 L Diode:1N4148WS D2
@@ -784,4 +750,37 @@ Wire Wire Line
 	8850 4800 9150 4800
 Wire Wire Line
 	9450 4800 9750 4800
+Wire Wire Line
+	5100 6650 5350 6650
+Wire Wire Line
+	5100 6750 5350 6750
+Wire Wire Line
+	5100 6850 5350 6850
+Wire Wire Line
+	5100 6950 5350 6950
+Wire Wire Line
+	5100 7050 5350 7050
+Wire Wire Line
+	5850 6650 6100 6650
+Wire Wire Line
+	6100 6750 5850 6750
+Wire Wire Line
+	5850 6850 6100 6850
+Wire Wire Line
+	6100 6950 5850 6950
+Wire Wire Line
+	5850 7050 6100 7050
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J2
+U 1 1 5D7A19E5
+P 5650 6850
+F 0 "J2" H 5700 7267 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 5700 7176 50  0000 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 5650 6850 50  0001 C CNN
+F 3 "~" H 5650 6850 50  0001 C CNN
+F 4 "TME" H 5650 6850 50  0001 C CNN "Supplier"
+F 5 "T821-1-10-S1" H 5650 6850 50  0001 C CNN "Supplier Part"
+	1    5650 6850
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
