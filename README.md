@@ -53,3 +53,43 @@ In fact this works for the blue LEDs but not for the red one. So detecting error
 As described before I use ESPhome to generate a firmware and Home-Assistant to control the devices.
 
 A sample ESPHome configuration to generate a firmware can be found in the 'ESPHome configuration sample' directoy of this repository. This sample also includes the configuration for an external Bluetooth temperature and humidity sensor [Xiaomi CGG1](https://esphome.io/components/sensor/xiaomi_cgg1.html).
+
+
+## Installation
+To installe the addtional PCB you have remove the fan module from your Venta airwasher and open it. With a flat screwdriver this is no real problem and it can be done without any damage, take you time and wiggle and bend the case also a little to get the points where it is clipped together, once you got the trick it is easy.
+
+Here a Venta LW45:
+
+![Venta LW45](images/Venta_LW45.JPG)
+
+Open the cover:
+
+![Venta LW45 cover opened](images/Venta_LW45_cover_opened.JPG)
+
+Remove the fan module:
+
+![Venta LW45 fan module](images/Venta_LW45_fan_module.JPG)
+
+Open the fan module:
+
+![Venta LW45 fan module open](images/Venta_LW45_fan_module_open.JPG)
+
+Remove the seperator:
+
+![Venta LW45 fan module open seperator removed](images/Venta_LW45_fan_module_open_seperator_removed.JPG)
+
+Remove the ribbon cable from the main board:
+
+![Venta LW45 fan module control board back](images/Venta_LW45_fan_module_control_board_back.JPG)
+
+Add the addtional plug to the ribbon cable:
+
+![Venta LW45 fan module ribbon cable addtional connector](images/Venta_LW45_fan_module_ribbon_cable_addtional_connector.JPG)
+
+Put the PCB in the cover and connect the cable:
+
+![Venta LW45 fan module PCB installed](images/Venta_LW45_fan_module_PCB_installed.JPG)
+
+Add the seperator, connect the cable to the main board and close the fan module.
+
+You're done!
