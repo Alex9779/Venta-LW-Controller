@@ -1,0 +1,208 @@
+substitutions:
+  device_name: venta
+  ip_address: 172.16.1.1
+  sensor1_type: xiaomi_cgg1
+  sensor1_mac: FF:FF:FF:FF:FF:FF
+ 
+esphome:
+  name: ${device_name}
+  platform: ESP32
+  board: esp32dev
+  includes:
+    - venta_output.h
+ 
+wifi:
+  ssid: !secret my_secret_ssid
+  password: !secret my_secret_password
+  manual_ip:
+    static_ip: ${ip_address}
+    subnet: 255.255.0.0
+    gateway: 172.16.0.1
+ 
+ota:
+ 
+logger:
+ 
+api:
+ 
+sensor:
+  - platform: template
+    id: sensor_speed
+    name: ${device_name}_sensor_speed
+     
+  - platform: ${sensor1_type}
+    mac_address: ${sensor1_mac}
+    temperature:
+      name: ${device_name}_temperature1
+    humidity:
+      name: ${device_name}_humidity1
+    battery_level:
+      name: ${device_name}_battery_level1
+ 
+binary_sensor:
+  - platform: status
+    name: ${device_name}_status
+ 
+  - platform: gpio
+    id: sensor_power
+    pin:
+      number: 18
+      mode: INPUT
+      inverted: true
+    filters:
+      - delayed_on: 50ms
+      - delayed_off: 100ms
+    on_state:
+      if:
+        condition:
+          binary_sensor.is_off: sensor_power
+        then:
+          - text_sensor.template.publish:
+              id: sensor_status
+              state: "Off"
+ 
+  - platform: gpio
+    id: sensor_low
+    pin:
+      number: 19
+      mode: INPUT
+      inverted: true
+    filters:
+      - delayed_on: 50ms
+      - delayed_off: 100ms
+    on_state:
+      if:
+        condition:
+          binary_sensor.is_on: sensor_low
+        then:
+          - text_sensor.template.publish:
+              id: sensor_status
+              state: "Low"
+ 
+  - platform: gpio
+    id: sensor_mid
+    pin:
+      number: 21
+      mode: INPUT
+      inverted: true
+    filters:
+      - delayed_on: 50ms
+      - delayed_off: 100ms
+    on_state:
+      if:
+        condition:
+          binary_sensor.is_on: sensor_mid
+        then:
+          - text_sensor.template.publish:
+              id: sensor_status
+              state: "Medium"
+ 
+  - platform: gpio
+    id: sensor_high
+    pin:
+      number: 22
+      mode: INPUT
+      inverted: true
+    filters:
+      - delayed_on: 50ms
+      - delayed_off: 100ms
+    on_state:
+      if:
+        condition:
+          binary_sensor.is_on: sensor_high
+        then:
+          - text_sensor.template.publish:
+              id: sensor_status
+              state: "High"
+ 
+  - platform: template
+    id: sensor_pre_error
+    filters:
+      - delayed_on: 1s
+    lambda: |-
+      if (id(sensor_power).state
+          && !id(sensor_low).state
+          && !id(sensor_mid).state
+          && !id(sensor_high).state
+          )
+      {       
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+ 
+  - platform: template
+    id: sensor_error
+    filters:
+      - delayed_on: 180s
+    lambda: |-
+      return (id(internal_error).state);
+ 
+  - platform: template
+    id: internal_error
+    filters:
+      - delayed_on: 100ms
+    lambda: |-
+      if (id(sensor_power).state
+          && !id(sensor_low).state
+          && !id(sensor_mid).state
+          && !id(sensor_high).state
+          )
+      {       
+        return true;
+      }
+      else
+      {
+        return false;
+      }
+ 
+output:
+  - platform: custom
+    type: float
+    lambda: |-
+      auto venta_output = new VentaOutput();
+      App.register_component(venta_output);
+      return {venta_output};
+    outputs:
+      id: venta_output
+ 
+switch:
+  - platform: restart
+    name: ${device_name}_restart
+ 
+fan:
+  - platform: speed
+    name: ${device_name}
+    output: venta_output
+ 
+text_sensor:
+  - platform: template
+    id: sensor_status
+    name: ${device_name}_sensor_status
+    update_interval: 10s
+    lambda: |-
+      if (!id(sensor_power).state) {
+        return {"Off"};
+      }
+      else if (id(sensor_low).state) {
+        return {"Low"};
+      }
+      else if (id(sensor_mid).state) {
+        return {"Medium"};
+      }
+      else if (id(sensor_high).state) {
+        return {"High"};
+      }
+      else if (id(sensor_error).state) {
+        id(sensor_speed).publish_state(0.0);
+        return {"Error"};
+      }
+      id(sensor_speed).publish_state(0.0);
+      return {"Fatal Error"};
+ 
+esp32_ble_tracker:
+  scan_parameters:
+    window: 120ms
+    active: false
